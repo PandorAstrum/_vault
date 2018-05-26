@@ -1,4 +1,4 @@
-// Basic init
+// Basic import
 const electron = require('electron')
 const { app, BrowserWindow, Menu, MenuItem, dialog, globalShortcut } = electron
 const path = require('path')
@@ -15,21 +15,14 @@ process.env.NODE_ENV = 'debug';
 // To avoid being garbage collected
 var mainWindow = null;
 
-// app.on('ready', () => {
-
-//     let mainWindow = new BrowserWindow({width: 800, height: 600})
-
-//     mainWindow.loadURL(`file://${__dirname}/app/index.html`)
-
-// })
 // main window function
 function createMainWindow(){
     mainWindow = new BrowserWindow({
-        // width, 
-        // height,
+        // width, should load from persistent data store
+        // height, should load from persistent data store
         minWidth: 600,
         minHeight: 550,
-        icon: path.join(__dirname, './app/src/assets/icon.ico'),
+        // icon: path.join(__dirname, './app/src/assets/icon.ico'),
         frame: false,
         show: false,
         backgroundColor: '#303030'
@@ -40,7 +33,7 @@ function createMainWindow(){
     });
 
     // Load Url to main window
-    mainWindow.loadURL(`file://${__dirname}/app/index.html`);
+    mainWindow.loadURL(`file://${__dirname}/src/index.html`);
     // url.format({
     //     pathname: path.join(__dirname, './src/index.html'),
     //     protocol: 'file:',
