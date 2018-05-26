@@ -1,0 +1,17 @@
+# directories ...............
+bower_components
+node_modules
+release-builds
+vnv
+
+# cache .....................
+__pycache__
+.idea
+_pgbackup
+bin/py_dist
+.vscode
+
+# files .....................
+*.tgz
+*.log
+*.pyc
