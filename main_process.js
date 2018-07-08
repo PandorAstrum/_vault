@@ -1,3 +1,8 @@
+// Descriptions ------------------------------------------------------
+//
+// The Main Process that is called by start and also exe after build
+// -------------------------------------------------------------------
+
 // Basic import
 const electron = require('electron')
 const { app, BrowserWindow, Menu, MenuItem, dialog, globalShortcut } = electron
@@ -22,7 +27,7 @@ function createMainWindow(){
         // height, should load from persistent data store
         minWidth: 600,
         minHeight: 550,
-        // icon: path.join(__dirname, './app/src/assets/icon.ico'),
+        icon: path.join(__dirname, './src/res/icon.ico'),
         frame: false,
         show: false,
         backgroundColor: '#303030'
