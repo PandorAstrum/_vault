@@ -3,6 +3,7 @@
 // The Main Process that is called by start and also exe after build
 // -------------------------------------------------------------------
 
+
 // Basic import
 const electron = require('electron')
 const { app, BrowserWindow, Menu, MenuItem, dialog, globalShortcut } = electron
