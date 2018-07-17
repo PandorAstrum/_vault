@@ -49,7 +49,8 @@
     "start": "npm-run-all --parallel bundle serve",
     "package-win-32": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/res/icon.ico --prune=true --out=dist/build --appCopyright=\"Copyright © 2018 Pandorastrum, All rights reserved\" --version-string.CompanyName=PandorAstrum --version-string.FileDescription=CE --version-string.ProductName=\"Vault\"",
     "package-win-64": "electron-packager . --overwrite --asar=true --platform=win32 --arch=x64 --icon=src/res/icon.ico --prune=true --out=dist/build --appCopyright=\"Copyright © 2018 Pandorastrum, All rights reserved\" --version-string.CompanyName=\"PandorAstrum\" --version-string.FileDescription=\"Automation Suit for PandorAstrum\" --version-string.ProductName=\"Vault\"",
-    "package-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --icon=src/res/icon.png --prune=true --out=dist/build"
+    "package-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --icon=src/res/icon.png --prune=true --out=dist/build",
+    "dist": ""
   },
   "repository": "https://github.com/PandorAstrum/_vault",
   "keywords": [
